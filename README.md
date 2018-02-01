@@ -5,18 +5,18 @@
 
 
 - 코드 작성
-![title](/img/FirstView.png){: width="300" height="300"}
-![title](/img/SecondView.png){: width="300" height="300"}
+<img src="/img/FirstView.png" width="40%" height="40%">
+<img src="/img/SecondView.png" width="40%" height="40%">
 
 
 - 콘솔 화면
-![title](/img/FirstConsole.png){: width="100" height="500"}
-![title](/img/SecondConsole.png){: width="100" height="500"}
+<img src="/img/FirstConsole.png" width="40%" height="40%">
+<img src="/img/SecondConsole.png" width="40%" height="40%">
 
 
 - 실행 화면
-![title](/img/FirstViewScreen.png){: width="300" height="500"}
-![title](/img/SecondViewScreen.png){: width="300" height="500"}
+<img src="/img/FirstViewScreen.png" width="40%" height="40%">
+<img src="/img/SecondViewScreen.png" width="40%" height="40%">
 
 
 - 애플 UIKit View Management 클래스 중에서 UITabBarController 와 UITabBar에 대해 학습한다.
@@ -84,4 +84,4 @@ override func viewDidLoad() {
 
 
 - 실행 화면
-![title](/img/IBOutlet.png){: width="300" height="300"}
+<img src="/img/IBOutlet.png" width="40%" height="40%">
