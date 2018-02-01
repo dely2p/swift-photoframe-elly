@@ -2,7 +2,10 @@
 
 >  시작하기 - Tabbed App 템플릿
 자동 생성된 ViewController 클래스 viewDidLoad() 함수에서 print(#file, #line, #function, #column) 코드를 추가하고 실행하면 콘솔 영역에 무엇이 출력되는지 확인한다.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a21b30... add readme.md file to to describe adding IBOutlet #4
 
 
 - 코드 작성
@@ -105,7 +108,6 @@ Main.storyboard를 클릭하면 다음과 같은 화면이 뜬다.
 탭바 버튼 선택에 FirstView를 보여줄지, SecondView를 보여줄지를 Controller에서 뻗어나가는 화살표로 이미지화 시켜서 보여주고 있다.
 Main.storyboard 오른쪽 마우스클릭 후 Open As > Source Code를 클릭하면 소스코드로도 볼 수 있는데,
 
-
 ```
 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -120,7 +122,8 @@ Main.storyboard 오른쪽 마우스클릭 후 Open As > Source Code를 클릭하
 </tabBarController>
 ```
 
-firstView의 ID는 `9pv-A4-QxB`로, SecondView의 ID는  `8rJ-Kc-sve`로 설정해서 각각 연결해 둔 것을 볼 수 있다.
+firstView의 ID는 `9pv-A4-QxB`로, SecondView의 ID는  `8rJ-Kc-sve`로 각각 버튼을 누르면 연결할 수 있도록 설정되었다.
+
 
 2. UITabBar
 : 탭 바에 하나 이상의 버튼을 표시하는 Controller
@@ -133,4 +136,35 @@ firstView의 ID는 `9pv-A4-QxB`로, SecondView의 ID는  `8rJ-Kc-sve`로 설정�
 </tabBar>
 ```
 Background, Shadow, Selection, Image Tint, Style, Bar Tint, Item Positioning를 설정할 수 있다.
+<<<<<<< HEAD
 >>>>>>> 6767b2f... fix readme.md file to description UITabBarController, UITabBar #3
+=======
+
+
+
+
+# PhotoFrame step2
+
+>  IBOutlet
+First Scene에 만들어져 있는 레이블을 IBOutlet으로 연결하고 속성을 바꿔본다.
+
+- 코드 작성
+```
+@IBOutlet weak var firstLabel: UILabel!
+@IBOutlet weak var firstDescription: UILabel!
+override func viewDidLoad() {
+    super.viewDidLoad()
+    self.firstLabel.text = "Elly의 사진액자"
+    self.firstDescription.text = "글자색, 배경색, 투명도, 글자 크기를 바꿔본 Description"
+    self.firstDescription.textColor = UIColor.white
+    self.firstDescription.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
+    self.firstDescription.font = UIFont.boldSystemFont(ofSize: 15)
+
+    print(#file, #line, #function, #column)
+}
+```
+
+
+- 실행 화면
+![title](/img/IBOutlet.png){: width="300" height="300"}
+>>>>>>> 5a21b30... add readme.md file to to describe adding IBOutlet #4
