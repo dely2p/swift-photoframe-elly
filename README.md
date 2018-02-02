@@ -108,23 +108,28 @@ First Scene에 버튼(UIButton)을 추가하고 IBAction으로 연결한다.
 
 - ***학습꺼리***
 ### # 버튼에 IBAction을 추가할 때 이벤트(Event) 종류에는 어떤 것들이 있는지 학습한다.
+
 <img src="/img/IBAction_event.png" width="30%" height="30%">
-> Did End On Exit: 키보드의 Return 키 눌렀을 때
-> Editing Changed: 내용이 변경되었을 때
-> Editing Did Begin: 포커스가 들어왔을 때
-> Editing Did End: 포커스가 나갔을 때
-> Primary Action Triggered
-> Touch Cancel: 다른 터치 이벤트를 취소
-> Touch Down: 버튼을 한 번 누를 때 이벤트
-> Touch Down Repeat: 버튼을 두 번 이상 누를 때 이벤트
-> Touch Drag Enter: 손가락이 컨트롤의 경계로 드래그
-> Touch Drag Exit: 컨트롤 내에서 손가락이 경계 밖으로 드래그
-> Touch Drag Inside: 컨트롤의 범위 내에서 손가락을 드래그
-> Touch Drag Outside: 손가락이 컨트롤의 바깥 쪽에서 드래그
-> Touch Up inside: 손가락이 컨트롤의 경계 안에 있을 때 손가락을 떼면 동작
-> Touch Up Outside: 손가락이 컨트롤의 경계 밖에 있을 때 손가락을 떼면 동작
-> Value Changed: 터치를 드래그하거나 다른 방법으로 조작하여 일련의 다른 값을 방출
+
+```
+- Did End On Exit: 키보드의 Return 키 눌렀을 때
+- Editing Changed: 내용이 변경되었을 때
+- Editing Did Begin: 포커스가 들어왔을 때
+- Editing Did End: 포커스가 나갔을 때
+- Primary Action Triggered
+- Touch Cancel: 다른 터치 이벤트를 취소
+- Touch Down: 버튼을 한 번 누를 때 이벤트
+- Touch Down Repeat: 버튼을 두 번 이상 누를 때 이벤트
+- Touch Drag Enter: 손가락이 컨트롤의 경계로 드래그
+- Touch Drag Exit: 컨트롤 내에서 손가락이 경계 밖으로 드래그
+- Touch Drag Inside: 컨트롤의 범위 내에서 손가락을 드래그
+- Touch Drag Outside: 손가락이 컨트롤의 바깥 쪽에서 드래그
+- Touch Up inside: 손가락이 컨트롤의 경계 안에 있을 때 손가락을 떼면 동작
+- Touch Up Outside: 손가락이 컨트롤의 경계 밖에 있을 때 손가락을 떼면 동작
+- Value Changed: 터치를 드래그하거나 다른 방법으로 조작하여 일련의 다른 값을 방출
+```
 [참고]
+
 https://developer.apple.com/documentation/uikit/uicontrolevents
 http://susemi99.tistory.com/984
 
