@@ -5,18 +5,24 @@
 
 
 - 코드 작성
-<img src="/img/FirstView.png" width="60%" height="40%">
-<img src="/img/SecondView.png" width="60%" height="40%">
+```
+class FirstViewController: UIViewController {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print(#file, #line, #function, #column)
+    }
+}
+```
 
 - 콘솔 화면
-<img src="/img/FirstConsole.png" width="30%" height="40%">
-<img src="/img/SecondConsole.png" width="30%" height="40%">
+<img src="/img/FirstConsole.png" width="80%" height="50%" float="left">
+<img src="/img/SecondConsole.png" width="80%" height="50%" float="right">
 
 
 - 실행 화면
-<img src="/img/FirstViewScreen.png" width="30%" height="40%">
-<img src="/img/SecondViewScreen.png" width="30%" height="40%">
+<img src="/img/FirstViewScreen.png" width="30%" height="40%" float="left">
+<img src="/img/SecondViewScreen.png" width="30%" height="40%" float="right">
 
 
 - 애플 UIKit View Management 클래스 중에서 UITabBarController 와 UITabBar에 대해 학습한다.
@@ -99,7 +105,19 @@ First Scene에 버튼(UIButton)을 추가하고 IBAction으로 연결한다.
 :
 * 버튼에 액션을 여러개 추가할 수 있을까?
 : 여러개 추가할 수는 있으나 제일 마지막 IBAction이 실행된다.
-<img src="/img/several_IBAction.png" width="30%" height="30%">
+```
+@IBAction func nextButtonTouched(_ sender: Any) {
+    self.firstLabel.textColor = UIColor.blue
+    self.firstLabel.backgroundColor = UIColor.yellow
+    self.firstLabel.alpha = 0.5
+}
+
+@IBAction func prevButtonTouched(_ sender: Any) {
+    self.firstLabel.textColor = UIColor.cyan
+    self.firstLabel.backgroundColor = UIColor.darkGray
+    self.firstLabel.alpha = 0.5
+}
+```
 
 * 버튼이 여러일 때 하나의 액션에 추가할 수 있을까?
 : 하나의 액션에 여러개의 버튼을 추가할 수 있다.
@@ -107,5 +125,5 @@ First Scene에 버튼(UIButton)을 추가하고 IBAction으로 연결한다.
 
 
 - 실행 화면
-<img src="/img/IBAction_before.png" width="30%" height="30%">
-<img src="/img/IBAction_after.png" width="30%" height="30%">
+<img src="/img/IBAction_before.png" width="30%" height="30%" float="left">
+<img src="/img/IBAction_after.png" width="30%" height="30%" float="right">
