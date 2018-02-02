@@ -34,5 +34,10 @@ class FirstViewController: UIViewController {
         self.firstLabel.alpha = 0.5
     }
     
+    @IBAction func prevButtonTouched(_ sender: Any) {
+        self.firstLabel.textColor = UIColor.cyan
+        self.firstLabel.backgroundColor = UIColor.darkGray
+        self.firstLabel.alpha = 0.5
+    }
 }
 

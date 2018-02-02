@@ -85,3 +85,27 @@ override func viewDidLoad() {
 
 - 실행 화면
 <img src="/img/IBOutlet.png" width="40%" height="40%">
+
+
+
+
+# PhotoFrame step3
+
+>  IBAction
+First Scene에 버튼(UIButton)을 추가하고 IBAction으로 연결한다.
+
+- 학습꺼리
+* 버튼에 IBAction을 추가할 때 이벤트(Event) 종류에는 어떤 것들이 있는지 학습한다.
+:
+* 버튼에 액션을 여러개 추가할 수 있을까?
+: 여러개 추가할 수는 있으나 제일 마지막 IBAction이 실행된다.
+<img src="/img/several_IBAction.png" width="30%" height="30%">
+
+* 버튼이 여러일 때 하나의 액션에 추가할 수 있을까?
+: 하나의 액션에 여러개의 버튼을 추가할 수 있다.
+만들어둔 하나의 메소드에 여러번 접근할 수 있듯, 하나의 액션도 여러개의 버튼을 추가할 수 있는 것 같다.
+
+
+- 실행 화면
+<img src="/img/IBAction_before.png" width="30%" height="30%">
+<img src="/img/IBAction_after.png" width="30%" height="30%">
