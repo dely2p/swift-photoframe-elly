@@ -32,7 +32,9 @@ class FirstViewController: UIViewController {
 : 탭바를 누를 때 어떤 화면을 보여줄지 결정 하는 Controller
 
 Main.storyboard를 클릭하면 다음과 같은 화면이 뜬다.
+
 <img src="/img/TabBarController.png" width="50%" height="50%" float="right">
+
 탭바 버튼 선택에 FirstView를 보여줄지, SecondView를 보여줄지를 Controller에서 뻗어나가는 화살표로 이미지화 시켜서 보여주고 있다.
 Main.storyboard 오른쪽 마우스클릭 후 Open As > Source Code를 클릭하면 소스코드로도 볼 수 있는데,
 
