@@ -91,7 +91,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="다음"/>
                                 <connections>
-                                    <segue destination="sFK-w9-5ks" kind="show" id="Xs6-OK-2WP"/>
+                                    <segue destination="sFK-w9-5ks" kind="presentation" modalPresentationStyle="formSheet" id="Xs6-OK-2WP"/>
                                 </connections>
                             </button>
                         </subviews>
