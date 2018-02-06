@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--View Controller-->
+        <!--Sky Blue View Controller-->
         <scene sceneID="vUn-54-YYw">
             <objects>
-                <viewController id="Zsp-1t-5Oj" sceneMemberID="viewController">
+                <viewController id="Zsp-1t-5Oj" customClass="SkyBlueViewController" customModule="PhotoFrame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yi5-YY-M2G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="다음"/>
                                 <connections>
-                                    <segue destination="sFK-w9-5ks" kind="presentation" modalPresentationStyle="formSheet" id="Xs6-OK-2WP"/>
+                                    <action selector="nextButtonTouched:" destination="Zsp-1t-5Oj" eventType="touchUpInside" id="idn-Gn-Db8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -106,7 +106,7 @@
         <!--Yellow View Controller-->
         <scene sceneID="xKU-48-Dxy">
             <objects>
-                <viewController id="sFK-w9-5ks" customClass="YellowViewController" customModule="PhotoFrame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YellowViewController" id="sFK-w9-5ks" customClass="YellowViewController" customModule="PhotoFrame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cOM-Y1-ARq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
