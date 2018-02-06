@@ -6,7 +6,7 @@
 ---
 
 - ***코드 작성***
-```
+```swift
 class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ Main.storyboard를 클릭하면 다음과 같은 화면이 뜬다.
 탭바 버튼 선택에 FirstView를 보여줄지, SecondView를 보여줄지를 Controller에서 뻗어나가는 화살표로 이미지화 시켜서 보여주고 있다.
 Main.storyboard 오른쪽 마우스클릭 후 Open As > Source Code를 클릭하면 소스코드로도 볼 수 있는데,
 
-```
+```swift
 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -58,7 +58,7 @@ firstView의 ID는 `9pv-A4-QxB`로, SecondView의 ID는  `8rJ-Kc-sve`로 각각 
 2. ***UITabBar***
 : 탭 바에 하나 이상의 버튼을 표시하는 Controller
 
-```
+```swift
 <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
     <rect key="frame" x="0.0" y="975" width="768" height="49"/>
     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -78,7 +78,7 @@ First Scene에 만들어져 있는 레이블을 IBOutlet으로 연결하고 속�
 ---
 
 - ***코드 작성***
-```
+```swift
 @IBOutlet weak var firstLabel: UILabel!
 @IBOutlet weak var firstDescription: UILabel!
 override func viewDidLoad() {
@@ -137,7 +137,7 @@ http://susemi99.tistory.com/984
 
 ### # 버튼에 액션을 여러개 추가할 수 있을까?
 : 여러개 추가할 수는 있으나 제일 마지막 IBAction이 실행된다.
-```
+```swift
 @IBAction func nextButtonTouched(_ sender: Any) {
     self.firstLabel.textColor = UIColor.blue
     self.firstLabel.backgroundColor = UIColor.yellow
@@ -228,7 +228,8 @@ http://susemi99.tistory.com/984
 
 - ***실행 화면***
 
-<img src="/img/viewController1.png" width="30%" height="30%">  <img src="/img/viewController2.png" width="30%" height="30%">  <img src="/img/viewController3.png" width="30%" height="30%">  <img src="/img/viewController4.png" width="30%" height="30%">
+<img src="/img/viewController1.png" width="30%" height="30%">  <img src="/img/viewController2.png" width="30%" height="30%">
+<img src="/img/viewController3.png" width="30%" height="30%">  <img src="/img/viewController4.png" width="30%" height="30%">
 
 ---
 
