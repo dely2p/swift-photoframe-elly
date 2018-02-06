@@ -15,6 +15,7 @@
 		45F327482022B4860040F431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F327462022B4860040F431 /* LaunchScreen.storyboard */; };
 		45F327532022B4860040F431 /* PhotoFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F327522022B4860040F431 /* PhotoFrameTests.swift */; };
 		45F3275E2022B4860040F431 /* PhotoFrameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3275D2022B4860040F431 /* PhotoFrameUITests.swift */; };
+		45FB8D4520296F1200D2E14F /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB8D4420296F1200D2E14F /* YellowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		45F327592022B4860040F431 /* PhotoFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F3275D2022B4860040F431 /* PhotoFrameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFrameUITests.swift; sourceTree = "<group>"; };
 		45F3275F2022B4860040F431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45FB8D4420296F1200D2E14F /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				45F327442022B4860040F431 /* Assets.xcassets */,
 				45F327462022B4860040F431 /* LaunchScreen.storyboard */,
 				45F327492022B4860040F431 /* Info.plist */,
+				45FB8D4420296F1200D2E14F /* YellowViewController.swift */,
 			);
 			path = PhotoFrame;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FB8D4520296F1200D2E14F /* YellowViewController.swift in Sources */,
 				45F327402022B4860040F431 /* SecondViewController.swift in Sources */,
 				45F3273C2022B4860040F431 /* AppDelegate.swift in Sources */,
 				45F3273E2022B4860040F431 /* FirstViewController.swift in Sources */,
