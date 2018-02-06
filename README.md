@@ -6,7 +6,7 @@
 ---
 
 - ***코드 작성***
-```
+```swift
 class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ Main.storyboard를 클릭하면 다음과 같은 화면이 뜬다.
 탭바 버튼 선택에 FirstView를 보여줄지, SecondView를 보여줄지를 Controller에서 뻗어나가는 화살표로 이미지화 시켜서 보여주고 있다.
 Main.storyboard 오른쪽 마우스클릭 후 Open As > Source Code를 클릭하면 소스코드로도 볼 수 있는데,
 
-```
+```swift
 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -58,7 +58,7 @@ firstView의 ID는 `9pv-A4-QxB`로, SecondView의 ID는  `8rJ-Kc-sve`로 각각 
 2. ***UITabBar***
 : 탭 바에 하나 이상의 버튼을 표시하는 Controller
 
-```
+```swift
 <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
     <rect key="frame" x="0.0" y="975" width="768" height="49"/>
     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -78,7 +78,7 @@ First Scene에 만들어져 있는 레이블을 IBOutlet으로 연결하고 속�
 ---
 
 - ***코드 작성***
-```
+```swift
 @IBOutlet weak var firstLabel: UILabel!
 @IBOutlet weak var firstDescription: UILabel!
 override func viewDidLoad() {
@@ -137,7 +137,7 @@ http://susemi99.tistory.com/984
 
 ### # 버튼에 액션을 여러개 추가할 수 있을까?
 : 여러개 추가할 수는 있으나 제일 마지막 IBAction이 실행된다.
-```
+```swift
 @IBAction func nextButtonTouched(_ sender: Any) {
     self.firstLabel.textColor = UIColor.blue
     self.firstLabel.backgroundColor = UIColor.yellow
@@ -192,3 +192,44 @@ http://susemi99.tistory.com/984
 <img src="/img/scene1.png" width="30%" height="30%">  <img src="/img/scene2.png" width="30%" height="30%">  <img src="/img/scene3.png" width="30%" height="30%">
 
 ---
+
+
+
+
+# PhotoFrame step5
+
+>  ViewController 프로그래밍
+스토리보드 구성 요소와 클래스 코드와 연결해서 동작을 확장한다.
+실행하고 새로운 화면을 캡처해서 readme.md 파일에 포함한다.
+
+- ***학습꺼리***
+### # 화면 전환이 이루어지는 사이에 뷰컨트롤러 라이프사이클이 어떻게 변화하는지 학습한다.
+  화면 전환이 될 때 viewDidLoad(), viewWillAppear()이 호출되고,
+  이후 닫기 버튼을 누르면 viewWillDisappear(), viewDidDisappear()이 호출된다.
+  
+  컨트롤러 상태 변화에 따른 API를 그림으로 보면 다음과 같다.
+
+<img src="/img/viewController_state.png" width="30%" height="30%">
+
+
+### # YellowViewController에서 Segue를 제거하고 다음 화면을 보여줄 때 코드로 보여주는 방법을 찾아보고 적용해본다.
+  Segue를 제거하고, SkyBlueViewController를 만들어서 파란색 화면 Scene과 연결시켰다. 그리고 다음 버튼에 IBAction을 연결 시켜서 버튼을 눌렀을 때 다음 화면인 YellowViewController를 부르도록 만들었다.
+  
+  ```swift
+  class SkyBlueViewController: UIViewController {
+  
+  @IBAction func nextButtonTouched(_ sender: Any) {
+      if let skyBlueView = self.storyboard?.instantiateViewController(withIdentifier: "YellowViewController") {
+      self.present(skyBlueView, animated: true, completion: nil)
+  }
+}
+```
+
+
+- ***실행 화면***
+
+<img src="/img/viewController1.png" width="30%" height="30%">  <img src="/img/viewController2.png" width="30%" height="30%">
+<img src="/img/viewController3.png" width="30%" height="30%">  <img src="/img/viewController4.png" width="30%" height="30%">
+
+---
+
