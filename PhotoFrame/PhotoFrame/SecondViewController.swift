@@ -10,6 +10,11 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBAction func nextImageButtonTouched(_ sender: Any) {
+        let randomNumber: UInt32 = arc4random_uniform(22) + 1;
+        self.photoImageView.image = UIImage(named: randomNumber < 10 ? "0\(randomNumber).jpg" : "\(randomNumber).jpg")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#file, #line, #function, #column)
