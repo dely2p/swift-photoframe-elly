@@ -12,7 +12,7 @@ class SkyBlueViewController: UIViewController {
 
     @IBAction func nextButtonTouched(_ sender: Any) {
         if let skyBlueView = self.storyboard?.instantiateViewController(withIdentifier: "YellowViewController") {
-            self.present(skyBlueView, animated: true, completion: nil)
+            self.navigationController?.pushViewController(skyBlueView, animated: true)
         }
     }
     override func viewDidLoad() {
